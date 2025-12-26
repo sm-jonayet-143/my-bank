@@ -19,7 +19,7 @@ const Login = ({ onLogin }) => {
   };
 
   return (
-    <div className="fixed inset-0 flex items-center justify-center bg-gray-100">
+    <div className="fixed inset-0 flex items-center justify-center bg-amber-200 text-balck">
       <div className="w-full max-w-md">
         <h1 className="text-4xl font-bold text-center mb-6">
           Welcome To <span className="text-purple-600">NRBC Bank</span>
@@ -27,11 +27,11 @@ const Login = ({ onLogin }) => {
 
         <form
           onSubmit={handleSubmit}
-          className="bg-green-100 p-8 rounded-lg shadow-lg"
+          className="bg-black p-8 text-white rounded-lg shadow-lg"
         >
-          <h2 className="text-lg mb-4">Please Login</h2>
+          <h2 className="text-lg mb-4 text-center font-bold ">Please Login</h2>
 
-          <input
+          <input 
             type="email"
             placeholder="Enter Your Email"
             value={email}
@@ -56,7 +56,7 @@ const Login = ({ onLogin }) => {
           {/* LOGIN BUTTON (VISIBLE FOR SURE) */}
           <button
             type="submit"
-            className="w-full text-red-600 text-3xl font-extrabold py-2 rounded font-bold hover:bg-purple-700"
+            className="w-full text-red-600 text-3xl  py-2 rounded font-bold"
           >
             Login
           </button>
