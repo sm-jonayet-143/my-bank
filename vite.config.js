@@ -1,7 +1,19 @@
-import { defineConfig } from "vite";
-import react from "@vitejs/plugin-react";
-import tailwindcss from "@tailwindcss/vite";
+// vite.config.js or vite.config.ts
+import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react'
+import tailwindcss from '@tailwindcss/vite'
 
 export default defineConfig({
-  plugins: [react(), tailwindcss()],
-});
+  plugins: [
+    react(),
+    tailwindcss(),  // This enables Tailwind v4 automatically
+  ],
+})
+
+// import { defineConfig } from "vite";
+// import react from "@vitejs/plugin-react";
+// import tailwindcss from "@tailwindcss/vite";
+
+// export default defineConfig({
+//   plugins: [react(), tailwindcss()],
+// });
